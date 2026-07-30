@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Lost $5,000 in 14 Days: The Trading Mistake That Cost Me Big | Futures Trading Revolution</title>
+<meta name="description" content="Revenge trading nearly wiped out my account, and it happened so fast I did not realize until it was too late. The four stages and how to catch them.">
+<meta property="og:title" content="I Lost $5,000 in 14 Days: The Trading Mistake That Cost Me Big">
+<meta property="og:description" content="Revenge trading nearly wiped out my account, and it happened so fast I did not realize until it was too late. The four stages and how to catch them.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D6NDBBGGNC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-D6NDBBGGNC');
+</script>
+<style>
+  :root {
+    --ground: #0B0F14;
+    --card: rgba(255,255,255,0.04);
+    --border: rgba(255,255,255,0.08);
+    --yellow: #FFF205;
+    --yellow-dim: #E5D905;
+    --text: #D6D9DE;
+    --muted: #8B93A1;
+    --white: #FFFFFF;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { background: var(--ground); }
+  body {
+    background:
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px),
+      var(--ground);
+    background-size: 44px 44px, 44px 44px, auto;
+    color: var(--text);
+    font-family: 'Montserrat', -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--yellow); text-decoration: none; }
+  a:hover { color: var(--yellow-dim); }
+
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 18px 0;
+    background: rgba(11,15,20,0.85);
+    backdrop-filter: blur(8px);
+    position: sticky; top: 0; z-index: 10;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand-mark {
+    background: var(--yellow); color: #000;
+    font-weight: 800; font-size: 14px;
+    padding: 4px 9px; border-radius: 4px;
+  }
+  .brand-name {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px; letter-spacing: 0.18em;
+    color: var(--muted); text-transform: uppercase;
+  }
+  .brand a { display: flex; align-items: center; gap: 12px; }
+  header nav { display: flex; justify-content: space-between; align-items: center; }
+  .nav-links { display: flex; gap: 22px; }
+  .nav-links a {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px; letter-spacing: 0.08em;
+    color: var(--text); text-transform: uppercase;
+  }
+  .nav-links a:hover { color: var(--yellow); }
+
+  .back {
+    display: inline-block; margin: 34px 0 0;
+    font-family: 'Space Mono', monospace;
+    font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--muted);
+  }
+  .back:hover { color: var(--yellow); }
+
+  .post-head { padding: 26px 0 8px; }
+  .post-meta { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+  .chip {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+    border: 1px solid rgba(125,211,252,0.3);
+    color: #7DD3FC;
+    padding: 4px 10px; border-radius: 4px;
+    background: rgba(0,0,0,0.3);
+  }
+  .post-date {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px; letter-spacing: 0.1em;
+    color: var(--muted); text-transform: uppercase;
+  }
+  .post-head h1 {
+    color: var(--white);
+    font-size: clamp(28px, 4.5vw, 38px);
+    font-weight: 800; letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+
+  article { padding: 30px 0 10px; }
+  article p {
+    font-size: 16.5px; line-height: 1.75;
+    margin-bottom: 22px; color: var(--text);
+  }
+  article h2 {
+    color: var(--white);
+    font-size: 24px; font-weight: 700;
+    margin: 44px 0 18px;
+  }
+  article strong, article b { color: var(--white); font-weight: 700; }
+  article em, article i { color: var(--text); }
+  article ul { margin: 0 0 22px 22px; }
+  article li { font-size: 16.5px; line-height: 1.7; margin-bottom: 10px; }
+  article ul ul { margin-top: 10px; }
+  article img {
+    max-width: 100%; height: auto;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    margin: 6px 0 22px;
+  }
+  .video-embed {
+    position: relative; padding-bottom: 56.25%; height: 0;
+    margin: 6px 0 28px;
+    border-radius: 10px; overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .video-embed iframe {
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%; border: 0;
+  }
+  .callout {
+    background: var(--card);
+    border: 1px solid rgba(255,242,5,0.25);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 0 0 22px;
+  }
+  .callout p { margin: 0; font-size: 15.5px; }
+
+  .cta-band {
+    background: #000000;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 34px 32px;
+    margin: 50px 0 0;
+    text-align: center;
+  }
+  .cta-band h3 { color: var(--white); font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+  .cta-band p { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
+  .btn {
+    display: inline-block;
+    background: var(--yellow); color: #000;
+    font-weight: 700; font-size: 14px;
+    padding: 12px 26px; border-radius: 6px;
+  }
+  .btn:hover { background: var(--yellow-dim); color: #000; }
+
+  footer {
+    border-top: 1px solid var(--border);
+    margin-top: 70px; padding: 44px 0 60px;
+  }
+  .foot-brand { margin-bottom: 22px; }
+  .disclosures { font-size: 11.5px; line-height: 1.7; color: var(--muted); }
+  .disclosures p { margin-bottom: 12px; }
+  .foot-links {
+    margin-top: 20px;
+    font-family: 'Space Mono', monospace; font-size: 11px;
+    letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  .foot-links a { color: var(--muted); margin-right: 18px; }
+  .foot-links a:hover { color: var(--yellow); }
+  .copyright { margin-top: 18px; font-size: 11px; color: var(--muted); }
+
+  @media (max-width: 560px) {
+    .cta-band { padding: 28px 20px; }
+    .nav-links { gap: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <div class="brand">
+        <a href="https://www.futurestradingrevolution.com">
+          <span class="brand-mark">FTR</span>
+          <span class="brand-name">Futures Trading Revolution</span>
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Blog</a>
+        <a href="https://indicators.futurestradingrevolution.com">Indicators</a>
+        <a href="https://grade.futurestradingrevolution.com">Scorecard</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <a class="back" href="index.html">&larr; All posts</a>
+
+  <div class="post-head">
+    <div class="post-meta">
+      <span class="chip" style="border-color: rgba(255,242,5,0.3); color: #FFF205;">Process</span>
+      <span class="post-date">Dec 03, 2025</span>
+    </div>
+    <h1>I Lost $5,000 in 14 Days: The Trading Mistake That Cost Me Big</h1>
+  </div>
+
+  <article>
+
+    <div class="video-embed">
+      <iframe src="https://www.youtube.com/embed/6iisIx90J9k?si=lte8xKvCmvWhl2cz" title="Revenge trading video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <p><strong>Revenge trading</strong> nearly wiped out my account and it happened so fast I didn&rsquo;t even realize what was happening until it was too late.</p>
+    <p>Six months into my trading journey, I was killing it. July had been my best month yet, even in the middle of the slow summer markets. I was confident, consistent, and convinced I had cracked the code.</p>
+    <p>Then came August.</p>
+    <p>First trade: loss.<br>Second trade: loss.<br>Then a third&hellip; then a fifth.</p>
+    <p>Within three days, I was staring at a losing streak I&rsquo;d never experienced before. It made no sense to me, and my brain started talking back:</p>
+    <p>&ldquo;You&rsquo;ve been wronged. This isn&rsquo;t your fault. Remember July? You crushed it. You&rsquo;re the king of the summer market. Go get your money back.&rdquo;</p>
+    <p>So that&rsquo;s exactly what I did.</p>
+    <p>By the end of the first week, I had lost nearly 25% of my account. I was angry, confused, and most of all, embarrassed. For the first time ever, I dreaded the next week of trading.</p>
+
+    <h2>What Is Revenge Trading (And Why It&rsquo;s So Dangerous)</h2>
+    <p>Revenge trading happens when you trade on the emotions of previous trades, trying to <em>win back</em> what you just lost instead of following your plan.</p>
+    <p>It&rsquo;s sneaky because it doesn&rsquo;t start with a conscious decision and it doesn&rsquo;t happen all at once.</p>
+    <p>It happens in stages. And each stage is marked by a specific thought that hijacks your decision-making.</p>
+    <p>There are <strong>four</strong> of them.</p>
+    <p>Spot the thought, spot the stage, and you can stop the cycle before it takes over.</p>
+
+    <h2>Stage 1: The Hunt. &ldquo;I can get that back.&rdquo;</h2>
+    <p>The loss hits. Instead of pausing, you immediately start hunting for a way to re-enter the market.</p>
+    <p><em>Urgency is where revenge trading begins.</em></p>
+    <p><strong>Self-check:</strong> After a loss, do you instantly look for another trade instead of reviewing your plan?</p>
+
+    <h2>Stage 2: The Break. &ldquo;I NEED to get that back.&rdquo;</h2>
+    <!-- NOTE FOR JASON: the original post had Stage 3's paragraph duplicated
+         here. This is placeholder text in your voice. Rewrite or approve. -->
+    <p>The urgency hardens into need. The loss stops being a number and starts being a wrong that has to be righted today. Your plan is still open on the desk, but you&rsquo;ve stopped reading it, and the next setup only has to be close enough.</p>
+    <p><strong>Self-check:</strong> Have you ever changed your rules mid-trade just to erase a loss?</p>
+
+    <h2>Stage 3: The Chase. &ldquo;I WILL get that back.&rdquo;</h2>
+    <p>Now it&rsquo;s defiance. The rules aren&rsquo;t just bent, they&rsquo;re gone. Position sizing, stops, discipline, all abandoned in service of the WILL to win it back. Every price tick feels like an opportunity, and you&rsquo;re no longer trading your system, you&rsquo;re fighting the market.</p>
+    <p><strong>Self-check:</strong> Have you ever completely ignored your rules and taken trades you&rsquo;d normally avoid, just to claw your way back?</p>
+
+    <h2>Stage 4: The Tilt. &ldquo;I can&rsquo;t stop.&rdquo;</h2>
+    <p>Emotions have full control. You can&rsquo;t step away, and every trade feels like life or death. You&rsquo;re no longer trading the market, you&rsquo;re straight up gambling at this point.</p>
+    <p><strong>Self-check:</strong> Have you ever felt glued to your screen, unable to step away even when you knew you should?</p>
+
+    <h2>How I Lost $5,000 in Two Weeks</h2>
+    <p>By week two, half my account was gone. $5,000, donated to whoever was lucky enough to be on the other side of my trades.</p>
+    <p>Not because the market beat me&hellip; but because I beat myself.</p>
+    <div class="callout">
+      <p>That&rsquo;s the cruel truth about revenge trading: <strong>it disguises itself as an attempt to gain back <em>control</em> when all it does is deposit exponential chaos.</strong></p>
+    </div>
+
+    <h2>The Shift That Saved My Trading Career</h2>
+    <p>When I finally realized what I was doing, I made a choice: stop trading my emotions and double down on my process.</p>
+    <p>The first step wasn&rsquo;t pretending I was fine, it was admitting I wasn&rsquo;t.</p>
+    <p>I was angry, frustrated, and embarrassed.</p>
+    <p>And while I couldn&rsquo;t control those feelings, I could control what I did next.</p>
+    <p>Like what if Bruce Wayne had just gotten therapy? I doubt he would have spent his nights fighting shadows.</p>
+    <p>And that&rsquo;s exactly what revenge trading is: fighting the shadows of trades past.</p>
+    <p>Here&rsquo;s what helped me stop revenge trading for good:</p>
+
+    <h2>1. The Mindset: Treat Losses Like Tuition</h2>
+    <p>Losses aren&rsquo;t personal. They&rsquo;re tuition. They&rsquo;re the price of doing business.</p>
+    <p>If you stop treating them like enemies to fight, you strip away their power.</p>
+
+    <h2>2. The Rulebook: Protect Your Capital Like It&rsquo;s Oxygen</h2>
+    <p>Rules don&rsquo;t make you money. They <em>protect</em> it.</p>
+    <ul>
+      <li>One trade per market per day</li>
+      <li>Never risk more than 1&ndash;2% per trade</li>
+      <li>Position limits</li>
+    </ul>
+    <p>Guardrails like these keep you out of the emotional spiral.</p>
+
+    <h2>3. The Prep: Plan Before You Play</h2>
+    <p>Each night, I plan my trades in advance so when a loss hits, I can ask myself: &ldquo;is this next trade in my plan, or am I just chasing?&rdquo;</p>
+    <p>If it&rsquo;s not in the plan, that&rsquo;s <strong>Stage 1: The Hunt</strong>. And catching it there stops revenge trading before it starts.</p>
+
+    <h2>What Happened Next</h2>
+    <p>Two weeks after losing $5,000, I stuck to my system and traded all the way back to breakeven.</p>
+    <p><strong>I got it all back.</strong></p>
+    <p>It&rsquo;s one of the proudest moments of my career.</p>
+    <p>Not because I made money, but because I proved to myself that I could climb out of the spiral.</p>
+    <p>That experience taught me one truth every trader needs to hear:</p>
+    <p><strong>Your plan is your protection.</strong></p>
+
+    <h2>Key Takeaways: How to Stop Revenge Trading for Good</h2>
+    <ul>
+      <li>Recognize the 4 stages early, awareness kills impulse.</li>
+      <li>Never trade to &ldquo;get back&rdquo; what you lost, trade to follow your system.</li>
+      <li>Build rules that protect your psychology, not just your capital.</li>
+      <li>Treat every loss as tuition, not a threat.</li>
+      <li>End every trading day with review, not regret.</li>
+    </ul>
+
+    <h2>Final Word</h2>
+    <p>If you&rsquo;ve ever stared at your screen, desperate to make the market &ldquo;pay,&rdquo; I&rsquo;ve been there.<br>But you don&rsquo;t have to stay there.</p>
+    <p>Rely on these truths:</p>
+    <p>Process &gt; Profits</p>
+    <p>Discipline &gt; Dollar Signs</p>
+
+  </article>
+
+  <div class="cta-band">
+    <h3>The exact checks I run before every trade</h3>
+    <p>One page. Free. The process I go through before pulling the trigger.</p>
+    <a class="btn" href="https://www.futurestradingrevolution.com">Get the Checklist</a>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-brand brand">
+      <span class="brand-mark">FTR</span>
+      <span class="brand-name">Futures Trading Revolution</span>
+    </div>
+    <div class="disclosures">
+      <!-- COMPLIANCE: Replace the four paragraphs below with the four required
+           disclosures VERBATIM from VendorGuidelines.pdf / your live page footers. -->
+      <p>Futures trading involves substantial risk of loss and is not suitable for all investors. Past performance is not necessarily indicative of future results. You should carefully consider whether trading is suitable for you in light of your circumstances, knowledge, and financial resources.</p>
+      <p>NinjaTrader&reg; is a registered trademark of NinjaTrader, LLC. No NinjaTrader company has any affiliation with the owner, developer, or provider of the products or services described herein, or any interest, ownership or otherwise, in any such product or service, or endorses, recommends or approves any such product or service.</p>
+      <p>Futures Trading Revolution is a NinjaTrader Ecosystem vendor. Fundamental Futures LLC.</p>
+      <p>The information provided is for educational purposes only and is not intended as investment advice.</p>
+    </div>
+    <div class="foot-links">
+      <a href="https://www.futurestradingrevolution.com">Home</a>
+      <a href="index.html">Blog</a>
+      <a href="https://indicators.futurestradingrevolution.com">Indicators</a>
+      <a href="https://www.youtube.com/channel/UCu-KvQkcbJjt_CUi6bFaGkw">YouTube</a>
+    </div>
+    <p class="copyright">&copy; 2026 Futures Trading Revolution</p>
+  </div>
+</footer>
+
+</body>
+</html>

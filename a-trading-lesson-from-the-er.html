@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Trading Lesson From the ER | Futures Trading Revolution</title>
+<meta name="description" content="Six hours in the emergency room with my seven year old taught me the real cost of pretending you are fine to trade when you are not.">
+<meta property="og:title" content="A Trading Lesson From the ER">
+<meta property="og:description" content="Six hours in the emergency room with my seven year old taught me the real cost of pretending you are fine to trade when you are not.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D6NDBBGGNC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-D6NDBBGGNC');
+</script>
+<style>
+  :root {
+    --ground: #0B0F14;
+    --card: rgba(255,255,255,0.04);
+    --border: rgba(255,255,255,0.08);
+    --yellow: #FFF205;
+    --yellow-dim: #E5D905;
+    --text: #D6D9DE;
+    --muted: #8B93A1;
+    --white: #FFFFFF;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { background: var(--ground); }
+  body {
+    background:
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px),
+      var(--ground);
+    background-size: 44px 44px, 44px 44px, auto;
+    color: var(--text);
+    font-family: 'Montserrat', -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--yellow); text-decoration: none; }
+  a:hover { color: var(--yellow-dim); }
+
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 18px 0;
+    background: rgba(11,15,20,0.85);
+    backdrop-filter: blur(8px);
+    position: sticky; top: 0; z-index: 10;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand-mark {
+    background: var(--yellow); color: #000;
+    font-weight: 800; font-size: 14px;
+    padding: 4px 9px; border-radius: 4px;
+  }
+  .brand-name {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px; letter-spacing: 0.18em;
+    color: var(--muted); text-transform: uppercase;
+  }
+  .brand a { display: flex; align-items: center; gap: 12px; }
+  header nav { display: flex; justify-content: space-between; align-items: center; }
+  .nav-links { display: flex; gap: 22px; }
+  .nav-links a {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px; letter-spacing: 0.08em;
+    color: var(--text); text-transform: uppercase;
+  }
+  .nav-links a:hover { color: var(--yellow); }
+
+  .back {
+    display: inline-block; margin: 34px 0 0;
+    font-family: 'Space Mono', monospace;
+    font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--muted);
+  }
+  .back:hover { color: var(--yellow); }
+
+  .post-head { padding: 26px 0 8px; }
+  .post-meta { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+  .chip {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+    border: 1px solid rgba(125,211,252,0.3);
+    color: #7DD3FC;
+    padding: 4px 10px; border-radius: 4px;
+    background: rgba(0,0,0,0.3);
+  }
+  .post-date {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px; letter-spacing: 0.1em;
+    color: var(--muted); text-transform: uppercase;
+  }
+  .post-head h1 {
+    color: var(--white);
+    font-size: clamp(28px, 4.5vw, 38px);
+    font-weight: 800; letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+
+  article { padding: 30px 0 10px; }
+  article p {
+    font-size: 16.5px; line-height: 1.75;
+    margin-bottom: 22px; color: var(--text);
+  }
+  article h2 {
+    color: var(--white);
+    font-size: 24px; font-weight: 700;
+    margin: 44px 0 18px;
+  }
+  article strong, article b { color: var(--white); font-weight: 700; }
+  article em, article i { color: var(--text); }
+  article ul { margin: 0 0 22px 22px; }
+  article li { font-size: 16.5px; line-height: 1.7; margin-bottom: 10px; }
+  article ul ul { margin-top: 10px; }
+  article img {
+    max-width: 100%; height: auto;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    margin: 6px 0 22px;
+  }
+  .video-embed {
+    position: relative; padding-bottom: 56.25%; height: 0;
+    margin: 6px 0 28px;
+    border-radius: 10px; overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .video-embed iframe {
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%; border: 0;
+  }
+  .callout {
+    background: var(--card);
+    border: 1px solid rgba(255,242,5,0.25);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 0 0 22px;
+  }
+  .callout p { margin: 0; font-size: 15.5px; }
+
+  .cta-band {
+    background: #000000;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 34px 32px;
+    margin: 50px 0 0;
+    text-align: center;
+  }
+  .cta-band h3 { color: var(--white); font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+  .cta-band p { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
+  .btn {
+    display: inline-block;
+    background: var(--yellow); color: #000;
+    font-weight: 700; font-size: 14px;
+    padding: 12px 26px; border-radius: 6px;
+  }
+  .btn:hover { background: var(--yellow-dim); color: #000; }
+
+  footer {
+    border-top: 1px solid var(--border);
+    margin-top: 70px; padding: 44px 0 60px;
+  }
+  .foot-brand { margin-bottom: 22px; }
+  .disclosures { font-size: 11.5px; line-height: 1.7; color: var(--muted); }
+  .disclosures p { margin-bottom: 12px; }
+  .foot-links {
+    margin-top: 20px;
+    font-family: 'Space Mono', monospace; font-size: 11px;
+    letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  .foot-links a { color: var(--muted); margin-right: 18px; }
+  .foot-links a:hover { color: var(--yellow); }
+  .copyright { margin-top: 18px; font-size: 11px; color: var(--muted); }
+
+  @media (max-width: 560px) {
+    .cta-band { padding: 28px 20px; }
+    .nav-links { gap: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <div class="brand">
+        <a href="https://www.futurestradingrevolution.com">
+          <span class="brand-mark">FTR</span>
+          <span class="brand-name">Futures Trading Revolution</span>
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Blog</a>
+        <a href="https://indicators.futurestradingrevolution.com">Indicators</a>
+        <a href="https://grade.futurestradingrevolution.com">Scorecard</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <a class="back" href="index.html">&larr; All posts</a>
+
+  <div class="post-head">
+    <div class="post-meta">
+      <span class="chip" style="border-color: rgba(134,239,172,0.3); color: #86EFAC;">Trading Life</span>
+      <span class="post-date">Mar 10, 2026</span>
+    </div>
+    <h1>A Trading Lesson From the ER</h1>
+  </div>
+
+  <article>
+
+    <p>I had to take my 7 year old to the ER for stitches.</p>
+    <p>You know how they do in First Grade.</p>
+    <p>Work hard. Play harder.</p>
+    <p>He handled it like a champ.</p>
+    <p>Although halfway through he started writing what looked like a Civil War soldier&rsquo;s farewell letter.</p>
+    <p>&ldquo;Should I not survive this operation, know that I fought bravely.</p>
+    <p>Your loving son&hellip;&rdquo;</p>
+    <p>It felt a bit dramatic.</p>
+    <p>His little brother asked me how it happened. I told him the only responsible answer a father can give: &ldquo;Snitches get stitches.&rdquo;</p>
+    <p>Because I&rsquo;m a good parent.</p>
+    <p>But sitting there for six hours got me thinking about something we traders struggle with.</p>
+    <p>The <strong>real cost of pretending you&rsquo;re fine to trade when you&rsquo;re not.</strong></p>
+    <p>I&rsquo;m tired. My brain is fried. My emotional bucket is empty.</p>
+    <p>Even when it&rsquo;s &ldquo;just stitches,&rdquo; six hours of keeping your kid calm and brave in the ER will drain you.</p>
+    <p>A few years ago, I would be trading today anyway.</p>
+    <p>Didn&rsquo;t matter if my head wasn&rsquo;t right. Didn&rsquo;t matter if my body was shot.</p>
+    <p>That&rsquo;s <strong>FOMO</strong>.</p>
+    <p>Now the situation is different.</p>
+    <p>It&rsquo;s not just my account on the line.</p>
+    <p>My clients get daily analysis from me every night. Videos, charts, screenshots. Walking them through exactly how to read the market.</p>
+    <p>It&rsquo;s a huge part of how they learn to see what I see.</p>
+    <p>And if I&rsquo;m not in the right head space, there&rsquo;s real potential their accounts will pay for it as much as mine.</p>
+    <p>Now here&rsquo;s the uncomfortable truth.</p>
+    <p>As an educator, I&rsquo;d love to know everything.</p>
+    <p>Even more than that&hellip;</p>
+    <p>I&rsquo;d love for my clients <strong>to think</strong> I know everything.</p>
+    <p>That&rsquo;s <strong>PRIDE</strong>.</p>
+    <div class="callout">
+      <p>Combine FOMO and PRIDE, and you get a very dangerous equation in trading. <strong>FOMO + PRIDE = DRAWDOWN.</strong></p>
+    </div>
+    <p>Not just for me, but for anyone who&rsquo;s listening to me.</p>
+    <p>So today I&rsquo;m an observer until my mind and body are ready.</p>
+    <p><strong>The market isn&rsquo;t going to zero. There will always be another trade.</strong></p>
+    <p>Don&rsquo;t test your capital to find out how long it can withstand thinking otherwise.</p>
+    <p>As I told one of my clients recently: Sometimes the best trade is not taking one.</p>
+    <p>Thanks for reading,</p>
+    <p>Jason</p>
+    <p>P.S. Should word of my condition reach the homestead, kindly inform Mother I remain in good spirits&hellip; and my <a href="https://www.futurestradingrevolution.com">Futures Trading Checklist</a> is available for free download.</p>
+
+  </article>
+
+  <div class="cta-band">
+    <h3>The exact checks I run before every trade</h3>
+    <p>One page. Free. The process I go through before pulling the trigger.</p>
+    <a class="btn" href="https://www.futurestradingrevolution.com">Get the Checklist</a>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-brand brand">
+      <span class="brand-mark">FTR</span>
+      <span class="brand-name">Futures Trading Revolution</span>
+    </div>
+    <div class="disclosures">
+      <!-- COMPLIANCE: Replace the four paragraphs below with the four required
+           disclosures VERBATIM from VendorGuidelines.pdf / your live page footers. -->
+      <p>Futures trading involves substantial risk of loss and is not suitable for all investors. Past performance is not necessarily indicative of future results. You should carefully consider whether trading is suitable for you in light of your circumstances, knowledge, and financial resources.</p>
+      <p>NinjaTrader&reg; is a registered trademark of NinjaTrader, LLC. No NinjaTrader company has any affiliation with the owner, developer, or provider of the products or services described herein, or any interest, ownership or otherwise, in any such product or service, or endorses, recommends or approves any such product or service.</p>
+      <p>Futures Trading Revolution is a NinjaTrader Ecosystem vendor. Fundamental Futures LLC.</p>
+      <p>The information provided is for educational purposes only and is not intended as investment advice.</p>
+    </div>
+    <div class="foot-links">
+      <a href="https://www.futurestradingrevolution.com">Home</a>
+      <a href="index.html">Blog</a>
+      <a href="https://indicators.futurestradingrevolution.com">Indicators</a>
+      <a href="https://www.youtube.com/channel/UCu-KvQkcbJjt_CUi6bFaGkw">YouTube</a>
+    </div>
+    <p class="copyright">&copy; 2026 Futures Trading Revolution</p>
+  </div>
+</footer>
+
+</body>
+</html>

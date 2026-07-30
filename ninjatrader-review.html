@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NinjaTrader Review: An Honest Look at the Platform I Trade On | Futures Trading Revolution</title>
+<meta name="description" content="Zero dollars to open an account, free Level 1 futures data with a funded account, and commissions as low as nine cents per side on micros. The full honest breakdown.">
+<meta property="og:title" content="NinjaTrader Review: An Honest Look at the Platform I Trade On">
+<meta property="og:description" content="Zero dollars to open an account, free Level 1 futures data with a funded account, and commissions as low as nine cents per side on micros. The full honest breakdown.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D6NDBBGGNC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-D6NDBBGGNC');
+</script>
+<style>
+  :root {
+    --ground: #0B0F14;
+    --card: rgba(255,255,255,0.04);
+    --border: rgba(255,255,255,0.08);
+    --yellow: #FFF205;
+    --yellow-dim: #E5D905;
+    --text: #D6D9DE;
+    --muted: #8B93A1;
+    --white: #FFFFFF;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { background: var(--ground); }
+  body {
+    background:
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px),
+      var(--ground);
+    background-size: 44px 44px, 44px 44px, auto;
+    color: var(--text);
+    font-family: 'Montserrat', -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--yellow); text-decoration: none; }
+  a:hover { color: var(--yellow-dim); }
+
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 18px 0;
+    background: rgba(11,15,20,0.85);
+    backdrop-filter: blur(8px);
+    position: sticky; top: 0; z-index: 10;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand-mark {
+    background: var(--yellow); color: #000;
+    font-weight: 800; font-size: 14px;
+    padding: 4px 9px; border-radius: 4px;
+  }
+  .brand-name {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px; letter-spacing: 0.18em;
+    color: var(--muted); text-transform: uppercase;
+  }
+  .brand a { display: flex; align-items: center; gap: 12px; }
+  header nav { display: flex; justify-content: space-between; align-items: center; }
+  .nav-links { display: flex; gap: 22px; }
+  .nav-links a {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px; letter-spacing: 0.08em;
+    color: var(--text); text-transform: uppercase;
+  }
+  .nav-links a:hover { color: var(--yellow); }
+
+  .back {
+    display: inline-block; margin: 34px 0 0;
+    font-family: 'Space Mono', monospace;
+    font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--muted);
+  }
+  .back:hover { color: var(--yellow); }
+
+  .post-head { padding: 26px 0 8px; }
+  .post-meta { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+  .chip {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+    border: 1px solid rgba(125,211,252,0.3);
+    color: #7DD3FC;
+    padding: 4px 10px; border-radius: 4px;
+    background: rgba(0,0,0,0.3);
+  }
+  .post-date {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px; letter-spacing: 0.1em;
+    color: var(--muted); text-transform: uppercase;
+  }
+  .post-head h1 {
+    color: var(--white);
+    font-size: clamp(28px, 4.5vw, 38px);
+    font-weight: 800; letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+
+  article { padding: 30px 0 10px; }
+  article p {
+    font-size: 16.5px; line-height: 1.75;
+    margin-bottom: 22px; color: var(--text);
+  }
+  article h2 {
+    color: var(--white);
+    font-size: 24px; font-weight: 700;
+    margin: 44px 0 18px;
+  }
+  article strong, article b { color: var(--white); font-weight: 700; }
+  article em, article i { color: var(--text); }
+  article ul { margin: 0 0 22px 22px; }
+  article li { font-size: 16.5px; line-height: 1.7; margin-bottom: 10px; }
+  article ul ul { margin-top: 10px; }
+  article img {
+    max-width: 100%; height: auto;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    margin: 6px 0 22px;
+  }
+  .video-embed {
+    position: relative; padding-bottom: 56.25%; height: 0;
+    margin: 6px 0 28px;
+    border-radius: 10px; overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .video-embed iframe {
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%; border: 0;
+  }
+  .callout {
+    background: var(--card);
+    border: 1px solid rgba(255,242,5,0.25);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 0 0 22px;
+  }
+  .callout p { margin: 0; font-size: 15.5px; }
+
+  .cta-band {
+    background: #000000;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 34px 32px;
+    margin: 50px 0 0;
+    text-align: center;
+  }
+  .cta-band h3 { color: var(--white); font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+  .cta-band p { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
+  .btn {
+    display: inline-block;
+    background: var(--yellow); color: #000;
+    font-weight: 700; font-size: 14px;
+    padding: 12px 26px; border-radius: 6px;
+  }
+  .btn:hover { background: var(--yellow-dim); color: #000; }
+
+  footer {
+    border-top: 1px solid var(--border);
+    margin-top: 70px; padding: 44px 0 60px;
+  }
+  .foot-brand { margin-bottom: 22px; }
+  .disclosures { font-size: 11.5px; line-height: 1.7; color: var(--muted); }
+  .disclosures p { margin-bottom: 12px; }
+  .foot-links {
+    margin-top: 20px;
+    font-family: 'Space Mono', monospace; font-size: 11px;
+    letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  .foot-links a { color: var(--muted); margin-right: 18px; }
+  .foot-links a:hover { color: var(--yellow); }
+  .copyright { margin-top: 18px; font-size: 11px; color: var(--muted); }
+
+  @media (max-width: 560px) {
+    .cta-band { padding: 28px 20px; }
+    .nav-links { gap: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <div class="brand">
+        <a href="https://www.futurestradingrevolution.com">
+          <span class="brand-mark">FTR</span>
+          <span class="brand-name">Futures Trading Revolution</span>
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Blog</a>
+        <a href="https://indicators.futurestradingrevolution.com">Indicators</a>
+        <a href="https://grade.futurestradingrevolution.com">Scorecard</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <a class="back" href="index.html">&larr; All posts</a>
+
+  <div class="post-head">
+    <div class="post-meta">
+      <span class="chip" style="border-color: rgba(125,211,252,0.3); color: #7DD3FC;">Platform</span>
+      <span class="post-date">Jan 03, 2026</span>
+    </div>
+    <h1>NinjaTrader Review: An Honest Look at the Platform I Trade On</h1>
+  </div>
+
+  <article>
+
+    <div class="video-embed">
+      <iframe src="https://www.youtube.com/embed/YHwoXh3ZXhA" title="NinjaTrader review video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <h2>The Cost</h2>
+    <p>There&rsquo;s an old saying in trading: <em>it takes money to make money.</em></p>
+    <p>That&rsquo;s true but only if you&rsquo;re spending money where it actually matters.</p>
+    <p>And this is where NinjaTrader immediately stands out.</p>
+    <p>It costs <strong>zero dollars</strong> to open an account.</p>
+    <p>No account opening fee.</p>
+    <p>No platform fee just to get started.</p>
+    <p>And real-time data, which usually costs money on most platforms, is also free <em>if</em> you fund your NinjaTrader account.</p>
+    <p>With a funded account, you get <strong>Level 1 futures data</strong> at no cost.</p>
+    <p>That means real-time chart data for the most commonly traded futures markets is free.</p>
+    <p>Up until recently (Summer 2025), that data cost about twelve dollars per month. NinjaTrader removed that fee and credit where it&rsquo;s due, that&rsquo;s a meaningful improvement.</p>
+    <p>So far, so good.</p>
+    <p>But there is one unavoidable cost in futures trading, no matter where you trade.</p>
+    <p>Commissions.</p>
+    <p>This is where NinjaTrader is extremely competitive.</p>
+    <p>Commission rates can be as low as <strong>nine cents per side for micro contracts</strong> and <strong>fifty-nine cents per side for full contracts</strong>.</p>
+    <p>Compare that to many well-known futures brokers where you&rsquo;ll often pay closer to twenty-five cents for micros and eighty-five cents or more for full contracts.</p>
+    <p>Now, and this part matters, those lowest NinjaTrader rates require purchasing a <strong>lifetime license</strong>, which currently costs $1499.</p>
+    <p>Some competing brokers <em>can</em> offer lower per-trade rates if you trade very high volume, so depending on your style and frequency, cheaper options may exist.</p>
+    <p>But for most traders, especially over the long run, NinjaTrader typically ends up being one of the least expensive platforms AND brokers you can use.</p>
+    <p>Because you can trade in simulation indefinitely with zero cost, and only start paying commissions once you&rsquo;re ready to trade real money, I give NinjaTrader a <strong>9.3 out of 10</strong> on cost.</p>
+
+    <h2>Simulation Trading</h2>
+    <p>Which brings us to something that is absolutely critical and wildly overlooked.</p>
+    <p>Simulation trading.</p>
+    <p>Simulation, or paper trading, allows you to trade live markets in real time without risking a single dollar.</p>
+    <p>And real traders, both professional and retail, <em>should</em> be using simulation consistently.</p>
+    <p>Even after years of trading, I still use simulation to test new trade ideas before adding them to my live playbook.</p>
+    <p>For the new traders I coach, simulation isn&rsquo;t optional. It&rsquo;s mandatory.<br>Skipping it is how accounts get blown up.</p>
+    <p>This is an area where NinjaTrader absolutely nails it.</p>
+    <p>On many platforms, simulation and live trading require separate logins, which makes switching back and forth a hassle.</p>
+    <p>With NinjaTrader, you can toggle between simulation and live accounts instantly.</p>
+    <p>And most importantly, it <strong>feels exactly the same</strong> as trading live.</p>
+    <p>Same charts.<br>Same order flow.<br>Same execution process.</p>
+    <p>The only difference is the sidebar background color where you execute trades. Which is a helpful delineator so you know which one you&rsquo;re on.</p>
+    <p>That consistency is huge, especially for newer traders I coach, because when they go live, nothing changes visually, only the risk does.</p>
+    <p>On top of all that, NinjaTrader offers <strong>Market Replay</strong>, which allows you to replay entire trading days using historical data.</p>
+    <p>This is perfect for practicing, refining entries, and testing ideas outside of live market hours.</p>
+    <p>Simulation trading on NinjaTrader is a perfect <strong>10 out of 10</strong>. No notes.</p>
+
+    <h2>Drawing Tools</h2>
+    <p>This is where platforms really start to separate and where trader loyalty usually comes into play.</p>
+    <p>Once chart marking becomes second nature, switching platforms feels like switching from Apple to Android.</p>
+    <p>Me? My text bubbles are blue because I&rsquo;m not a sociopath.</p>
+    <p>And even though I learned to trade on NinjaTrader, I&rsquo;ve spent years using platforms like TradeStation, ThinkorSwim, and MotiveWave.</p>
+    <p>And no platform comes close to NinjaTrader&rsquo;s chart-marking tools.</p>
+    <p>They&rsquo;re flexible, fast, and intuitive.</p>
+    <p>You get a massive built-in toolset directly inside the chart window, plus two powerful shortcut options.</p>
+    <p>First: hotkeys.</p>
+    <p>NinjaTrader makes them extremely easy to set up and customize.</p>
+    <p>Second: the Drawing Tool Tile indicator.</p>
+    <p>It comes with NinjaTrader and lets you place your most-used tools directly on the chart.</p>
+    <p>I use this every single day.</p>
+    <p>And if you&rsquo;re a power user, especially with a programmable mouse, you can map your most common tools to mouse buttons and barely lift a finger.</p>
+    <p>Ease of use, execution speed, and customization earn NinjaTrader an <strong>11 out of 10</strong> here.</p>
+
+    <h2>Chart Loading</h2>
+    <p>Once a chart is loaded, I don&rsquo;t think there&rsquo;s a better platform available.</p>
+    <p>But getting there?</p>
+    <p>That&rsquo;s where NinjaTrader has a learning curve.</p>
+    <p>Chart loading, workspaces, and templates are not immediately intuitive, which is a fair frustration for new users.</p>
+    <p>But... this is one of the tradeoffs you make for a powerful platform.</p>
+    <p>The good news is there&rsquo;s <strong>no cost</strong> to learning it.</p>
+    <p>You can take the extra time in simulation without risking a dollar.</p>
+    <p>Once you understand how workspaces and templates function, NinjaTrader becomes incredibly powerful.</p>
+    <p>You can make charts look, feel, and behave exactly how you want.</p>
+    <p>So I split this into two ratings:</p>
+    <p>User Learning Experience: <strong>8 out of 10 for the steep learning curve</strong><br>Functionality: <strong>10 out of 10 and others don&rsquo;t come close</strong></p>
+
+    <h2>Web Platform and Mobile App Experience</h2>
+    <p>I&rsquo;ve never placed a trade on either, for a reason.</p>
+    <p>Serious futures trading happens on a desktop platform.</p>
+    <p>The mobile app is useful for monitoring positions or closing a trade if you absolutely have to, but it&rsquo;s not designed for active trade management.</p>
+    <p>If your priority is web-based or mobile trading, NinjaTrader probably isn&rsquo;t for you.</p>
+    <p>Trading shouldn&rsquo;t be gamified. It&rsquo;s a skill, and skills require proper tools.</p>
+    <p>Web and mobile experience: <strong>6 out of 10</strong>, and that&rsquo;s perfectly fine for who this platform is built for.</p>
+    <p>Finally&hellip;</p>
+
+    <h2>Customer Support</h2>
+    <p>Customer support is important, especially during live market conditions.</p>
+    <p>I&rsquo;ve had trade-related emergencies, and NinjaTrader&rsquo;s support has always been quick and responsive during market hours.</p>
+    <p>They immediately ask if you have a trade in progress, and they act accordingly.</p>
+    <p>Every interaction I&rsquo;ve had has been professional and, to be honest, pleasant.</p>
+    <p>I have seen reports of slower response times outside U.S. market hours, which could matter for international traders.</p>
+    <p>But based on my experience, NinjaTrader earns a <strong>10 out of 10</strong> for customer support.</p>
+    <p>If your experience has been different, leave a comment on the video. I&rsquo;d definitely like to hear it.</p>
+
+    <h2>The One Problem</h2>
+    <p>Now for my <strong>one real issue with NinjaTrader.</strong></p>
+    <p>VIX data.</p>
+    <p>You can&rsquo;t access VIX data without paying for the CBOE data package, and even then, I&rsquo;ve never been able to get it to populate reliably in real time.</p>
+    <p>This is important.</p>
+    <p>The S&amp;P and VIX move in inverse correlation.<br>If you trade ES, you need a VIX chart.</p>
+    <p>Because of this, I run TradeStation alongside NinjaTrader just to monitor VIX. Using multiple platforms for one related task isn&rsquo;t ideal.</p>
+    <p>This isn&rsquo;t a dealbreaker but it <em>does</em> matter.</p>
+
+    <h2>Final Verdict</h2>
+    <p>After considering cost, simulation, charting, user experience, customer support, and the lack of native VIX data...</p>
+    <p>I give NinjaTrader a <strong>9.7 out of 10</strong> for futures trading.</p>
+    <p>It&rsquo;s not perfect.</p>
+    <p>You <em>might</em> find cheaper commissions depending on your volume, and the VIX limitation is real.</p>
+    <p>But if you&rsquo;re serious about learning futures trading, <strong>there&rsquo;s no other platform I&rsquo;d recommend above NinjaTrader in 2026.</strong></p>
+
+  </article>
+
+  <div class="cta-band">
+    <h3>New to NinjaTrader?</h3>
+    <p>I put together a start page that walks you from zero to your first chart.</p>
+    <a class="btn" href="https://futurestradingrevolution.com/start">Start Here</a>
+  </div>
+
+  <div class="cta-band">
+    <h3>The exact checks I run before every trade</h3>
+    <p>One page. Free. The process I go through before pulling the trigger.</p>
+    <a class="btn" href="https://www.futurestradingrevolution.com">Get the Checklist</a>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-brand brand">
+      <span class="brand-mark">FTR</span>
+      <span class="brand-name">Futures Trading Revolution</span>
+    </div>
+    <div class="disclosures">
+      <!-- COMPLIANCE: Replace the four paragraphs below with the four required
+           disclosures VERBATIM from VendorGuidelines.pdf / your live page footers. -->
+      <p>Futures trading involves substantial risk of loss and is not suitable for all investors. Past performance is not necessarily indicative of future results. You should carefully consider whether trading is suitable for you in light of your circumstances, knowledge, and financial resources.</p>
+      <p>NinjaTrader&reg; is a registered trademark of NinjaTrader, LLC. No NinjaTrader company has any affiliation with the owner, developer, or provider of the products or services described herein, or any interest, ownership or otherwise, in any such product or service, or endorses, recommends or approves any such product or service.</p>
+      <p>Futures Trading Revolution is a NinjaTrader Ecosystem vendor. Fundamental Futures LLC.</p>
+      <p>The information provided is for educational purposes only and is not intended as investment advice.</p>
+    </div>
+    <div class="foot-links">
+      <a href="https://www.futurestradingrevolution.com">Home</a>
+      <a href="index.html">Blog</a>
+      <a href="https://indicators.futurestradingrevolution.com">Indicators</a>
+      <a href="https://www.youtube.com/channel/UCu-KvQkcbJjt_CUi6bFaGkw">YouTube</a>
+    </div>
+    <p class="copyright">&copy; 2026 Futures Trading Revolution</p>
+  </div>
+</footer>
+
+</body>
+</html>
