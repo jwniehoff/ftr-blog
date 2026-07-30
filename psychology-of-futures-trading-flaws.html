@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="64x64" href="favicon-64.png">
+<link rel="icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<title>The Psychology of Futures Trading: The Flaws That Wreck Good Traders | Futures Trading Revolution</title>
+<meta name="description" content="Eleven psychological flaws that wreck good futures traders, from ruin blindness to revenge trading, plus how to spot them in your own trade data.">
+<meta property="og:title" content="The Psychology of Futures Trading: The Flaws That Wreck Good Traders">
+<meta property="og:description" content="Eleven psychological flaws that wreck good futures traders, from ruin blindness to revenge trading, plus how to spot them in your own trade data.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D6NDBBGGNC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-D6NDBBGGNC');
+</script>
+<style>
+  :root {
+    --ground: #0B0F14;
+    --card: rgba(255,255,255,0.04);
+    --border: rgba(255,255,255,0.08);
+    --yellow: #FFF205;
+    --yellow-dim: #E5D905;
+    --text: #D6D9DE;
+    --muted: #8B93A1;
+    --white: #FFFFFF;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { background: var(--ground); }
+  body {
+    background:
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px),
+      var(--ground);
+    background-size: 44px 44px, 44px 44px, auto;
+    color: var(--text);
+    font-family: 'Montserrat', -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--yellow); text-decoration: none; }
+  a:hover { color: var(--yellow-dim); }
+
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 18px 0;
+    background: rgba(11,15,20,0.85);
+    backdrop-filter: blur(8px);
+    position: sticky; top: 0; z-index: 10;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand-mark {
+    background: var(--yellow); color: #000;
+    font-weight: 800; font-size: 14px;
+    padding: 4px 9px; border-radius: 4px;
+  }
+  .brand-name {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px; letter-spacing: 0.18em;
+    color: var(--muted); text-transform: uppercase;
+  }
+  .brand a { display: flex; align-items: center; gap: 12px; }
+  header nav { display: flex; justify-content: space-between; align-items: center; }
+  .nav-links { display: flex; gap: 22px; }
+  .nav-links a {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px; letter-spacing: 0.08em;
+    color: var(--text); text-transform: uppercase;
+  }
+  .nav-links a:hover { color: var(--yellow); }
+
+  .back {
+    display: inline-block; margin: 34px 0 0;
+    font-family: 'Space Mono', monospace;
+    font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--muted);
+  }
+  .back:hover { color: var(--yellow); }
+
+  .post-head { padding: 26px 0 8px; }
+  .post-meta { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+  .chip {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+    border: 1px solid rgba(125,211,252,0.3);
+    color: #7DD3FC;
+    padding: 4px 10px; border-radius: 4px;
+    background: rgba(0,0,0,0.3);
+  }
+  .post-date {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px; letter-spacing: 0.1em;
+    color: var(--muted); text-transform: uppercase;
+  }
+  .post-head h1 {
+    color: var(--white);
+    font-size: clamp(28px, 4.5vw, 38px);
+    font-weight: 800; letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+
+  article { padding: 30px 0 10px; }
+  article p {
+    font-size: 16.5px; line-height: 1.75;
+    margin-bottom: 22px; color: var(--text);
+  }
+  article h2 {
+    color: var(--white);
+    font-size: 24px; font-weight: 700;
+    margin: 44px 0 18px;
+  }
+  article strong, article b { color: var(--white); font-weight: 700; }
+  article em, article i { color: var(--text); }
+  article ul { margin: 0 0 22px 22px; }
+  article li { font-size: 16.5px; line-height: 1.7; margin-bottom: 10px; }
+  article ul ul { margin-top: 10px; }
+  article img {
+    max-width: 100%; height: auto;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    margin: 6px 0 22px;
+  }
+  .video-embed {
+    position: relative; padding-bottom: 56.25%; height: 0;
+    margin: 6px 0 28px;
+    border-radius: 10px; overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .video-embed iframe {
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%; border: 0;
+  }
+  .callout {
+    background: var(--card);
+    border: 1px solid rgba(255,242,5,0.25);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 0 0 22px;
+  }
+  .callout p { margin: 0; font-size: 15.5px; }
+
+  .cta-band {
+    background: #000000;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 34px 32px;
+    margin: 50px 0 0;
+    text-align: center;
+  }
+  .cta-band h3 { color: var(--white); font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+  .cta-band p { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
+  .btn {
+    display: inline-block;
+    background: var(--yellow); color: #000;
+    font-weight: 700; font-size: 14px;
+    padding: 12px 26px; border-radius: 6px;
+  }
+  .btn:hover { background: var(--yellow-dim); color: #000; }
+
+  footer {
+    border-top: 1px solid var(--border);
+    margin-top: 70px; padding: 44px 0 60px;
+  }
+  .foot-brand { margin-bottom: 22px; }
+  .disclosures { font-size: 11.5px; line-height: 1.7; color: var(--muted); }
+  .disclosures p { margin-bottom: 12px; }
+  .foot-links {
+    margin-top: 20px;
+    font-family: 'Space Mono', monospace; font-size: 11px;
+    letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  .foot-links a { color: var(--muted); margin-right: 18px; }
+  .foot-links a:hover { color: var(--yellow); }
+  .copyright { margin-top: 18px; font-size: 11px; color: var(--muted); }
+
+  @media (max-width: 560px) {
+    .cta-band { padding: 28px 20px; }
+    .nav-links { gap: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <div class="brand">
+        <a href="https://www.futurestradingrevolution.com">
+          <span class="brand-mark">FTR</span>
+          <span class="brand-name">Futures Trading Revolution</span>
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Blog</a>
+        <a href="https://indicators.futurestradingrevolution.com">Indicators</a>
+        <a href="https://grade.futurestradingrevolution.com">Scorecard</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <a class="back" href="index.html">&larr; All posts</a>
+
+  <div class="post-head">
+    <div class="post-meta">
+      <span class="chip" style="border-color: rgba(255,242,5,0.3); color: #FFF205;">Process</span>
+      <span class="post-date">Jul 30, 2026</span>
+    </div>
+    <h1>The Psychology of Futures Trading: The Flaws That Wreck Good Traders</h1>
+  </div>
+
+  <article>
+
+    <p>Two traders can trade the same setup, on the same instrument, with the same stop distance, and one grinds out a career while the other is done in six weeks. Nothing in the strategy explains that. Everything in their behavior does.</p>
+    <p>This post covers eleven flaws in the psychology of futures trading that quietly wreck competent traders, grouped so you can see which ones you actually have. You walk away with a checklist you can hold against your own trade history tonight.</p>
+    <p>I'm Jason. I'm a futures trader and a trading coach. I'm also a professional orchestral percussionist of 22 years, which means I spent a career learning that the person who keeps time under pressure beats the person with fancier chops.</p>
+
+    <h2>Two Traders You've Already Met</h2>
+    <p>Trader A knows one setup. She trades it two or three times a day, always the same size, always with a stop she decided on before entry. She can't explain order flow. Her journal is boring. She has never had a huge week.</p>
+    <p>Trader B can read the tape, name every indicator, and explain the macro backdrop for the session. He sizes up when he's confident. He moves stops when the trade &ldquo;needs room.&rdquo; He has had huge weeks. He has also blown up two accounts.</p>
+    <p>(Neither is a real student. Both are composites of patterns I see over and over in real trade data.)</p>
+    <p>In what other field does the person who knows less consistently beat the person who knows more? Nobody with no training out-operates a surgeon. Nobody wanders in off the street and out-designs a chip engineer. But in futures trading it happens every single week.</p>
+    <div class="callout">
+      <p><strong>Trading isn't the study of markets. It's the study of what you do under pressure, with leverage, after a loss.</strong></p>
+    </div>
+    <p>And behavior is hard to teach. It's hard to measure. It changes with your account balance. Worst of all, people deny they have it, especially when describing themselves.</p>
+    <p>Here are the flaws I see most.</p>
+
+    <h2>The Risk Flaws: The Ones That End Accounts</h2>
+    <p><strong>1. Ruin blindness.</strong> You can love risk and still refuse ruin. Those are different things. A setup can win 70 percent of the time and still destroy you, because the 30 percent will show up, and it will show up in a cluster. If any single trade can take out a month of progress, the odds don't matter. Leverage is what turns an ordinary loss into a career-ending one. Most blowups aren't a bad strategy. They're a good strategy sized like a coin flip.</p>
+    <p><strong>2. Wanting the reward without paying the price.</strong> Every edge has a cost, and the cost is almost never the commission. It's sitting through drawdown. It's being flat while the move you called runs without you. Most &ldquo;improvements&rdquo; traders make are attempts to steal the reward without paying that price: widening stops, averaging down, skipping the stop entirely. It feels like optimization. It's shoplifting, and the market is a good security guard.</p>
+    <p><strong>3. Underestimating room for error, especially mental room.</strong> You can survive a 20 percent drawdown on a spreadsheet. Can you survive it in your head? A drawdown that's mathematically fine can still wreck your confidence at the exact moment your process needs you steady. Room for error isn't for cowards. It's what lets you still be trading when your edge finally shows up. Size for the version of you that just lost four in a row, not the version reading this calmly.</p>
+    <p><strong>4. Outcome bias: crediting skill for wins and luck for losses.</strong> You held through noise and it worked, so you call it conviction. You held through noise and it didn't, so you call it bad luck. Both trades were the same decision. Luck and risk are two sides of one coin, and if you won't grade the process independently of the result, you will keep reinforcing the exact habits that eventually cost you the account.</p>
+    <p>This is why the Trade Scorecard I built weights Risk heaviest of the three pillars, at 40 percent. You upload a NinjaTrader trade export and get a free scorecard: 13 traits scored as numbers, grouped into Risk, Consistency, and Discipline, with one composite score on top. Position risk sizing, loss size in R, and how far trades run against you (MAE control) all live in that Risk pillar, because those are the traits that decide whether you're still here in a year.</p>
+
+    <h2>The Consistency Flaws: The Ones That Flatten Your Equity Curve</h2>
+    <p><strong>5. Anchored to your own history.</strong> Your first couple hundred trades happened in a specific regime, and they wrote your rulebook whether you agreed to it or not. If you learned in a trending, high-volatility stretch, you probably believe in holding for extension. If you learned in chop, you probably believe in scalping and you flinch out of runners. Your experience is a rounding error of market history but roughly all of your instinct. Know which regime raised you.</p>
+    <p><strong>6. Treating a backtest as a prophecy.</strong> History is the study of things changing, which makes it a strange tool for predicting what won't change. General truths hold up: people panic, liquidity dries up, crowds chase. Specific truths rot: this exact time window, this exact level, this exact filter that made your curve pretty. The further back you look, the more general your conclusions should be.</p>
+    <p><strong>7. Size roulette.</strong> Most damaged accounts I look at don't have a win rate problem. They have a size problem. Small size when the trade was good, huge size on the one that felt certain, then micro size while rebuilding confidence. The result is an equity curve where a handful of trades own all the P&amp;L, in either direction. Profit concentration and size stability are traits for a reason. <strong>Stable size is what turns an edge into a result.</strong></p>
+
+    <h2>The Discipline Flaws: The Ones You'll Deny You Have</h2>
+    <p><strong>8. Action bias.</strong> If your sink breaks you grab a wrench. That instinct is useless here. Sitting flat is a position, and it's often the correct one, but it doesn't feel like work. So you take the marginal trade, then the one after that, and by 11am you've paid the market a fee for entertainment. Overtrading is rarely greed. It's usually discomfort with doing nothing.</p>
+    <p><strong>9. The last-trade bubble.</strong> One loss becomes a forecast. You take the next trade bigger to get it back, or you skip the next valid signal because you're rattled. Both are the same error: extrapolating one outcome into the future. <a href="revenge-trading-lesson.html">Revenge trading</a> doesn't announce itself with rage. It shows up as a slightly faster entry, slightly bigger size, slightly worse trade, minutes after a loss.</p>
+    <p><strong>10. Hold-time asymmetry.</strong> You cut winners in minutes and nurse losers for an hour. Ask why, honestly. A winner cut early locks in the feeling of being right. A loser held is a decision postponed. That's not analysis, that's ego management, and the hold-time ratio in your own data will tell on you faster than any journal entry.</p>
+    <p><strong>11. Copying someone playing a different game.</strong> The trader you follow may have a different account size, a different time horizon, a different tolerance for heat, and a different source of income. When you take cues from someone whose game isn't yours, you inherit their risk without their context. Social proof feels like evidence. In a discretionary game, it's mostly comfort.</p>
+
+    <h2>The Hierarchy That Actually Matters</h2>
+    <p>There's an order to this, and most traders work on it upside down.</p>
+    <ul>
+      <li>Survival comes first: risk per trade small enough that no single day matters.</li>
+      <li>Then behavior: same size, same process, after wins and after losses.</li>
+      <li>Then risk management craft: stop placement, where you take heat, how you scale.</li>
+      <li>Then, last, edge: entries, setups, indicators, the stuff everyone starts with.</li>
+    </ul>
+    <p>Trader B in the opening was excellent at the top of that list and failed the bottom. So none of the top mattered. Trader A was boringly good at the bottom, which made the top nearly optional.</p>
+    <div class="callout">
+      <p><strong>If you have one takeaway: you don't fix psychology by feeling calmer. You fix it by making the next decision identical whether the last one won or lost.</strong> That's measurable. Which means it's fixable.</p>
+    </div>
+
+    <h2>See Which Flaws You Actually Have</h2>
+    <p>Guessing at your own psychology is the least reliable way to study it. Your trade export doesn't guess.</p>
+    <p>Upload a NinjaTrader trade export and get a free Trade Scorecard: one composite score from 0 to 100 with a band, three pillar scores, all 13 traits scored, plus plain-language flags on your weak spots. No call, no card. (A couple of traits, stop-loss usage and no averaging losers, need order-level data the export doesn't include, so those are marked excluded rather than guessed. The rest are scored.)</p>
+    <p><a href="https://grade.futurestradingrevolution.com">Get your Trade Scorecard here.</a></p>
+    <p>And if you want to go through your low-scoring traits with someone who has looked at a lot of these, <a href="https://www.futurestradingrevolution.com/call">book a session</a>. I'll give you an hour of my time on the house.</p>
+    <p>Educational content only, not financial advice. Futures trading involves substantial risk of loss.</p>
+
+  </article>
+
+  <div class="cta-band">
+    <h3>Want an honest read on your own trading?</h3>
+    <p>The Trade Scorecard grades your NinjaTrader trade history across risk management, consistency, and discipline. Free.</p>
+    <a class="btn" href="https://grade.futurestradingrevolution.com">Score My Trading</a>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-brand brand">
+      <span class="brand-mark">FTR</span>
+      <span class="brand-name">Futures Trading Revolution</span>
+    </div>
+    <div class="disclosures">
+      <!-- COMPLIANCE: Replace the four paragraphs below with the four required
+           disclosures VERBATIM from VendorGuidelines.pdf / your live page footers. -->
+      <p>Futures trading involves substantial risk of loss and is not suitable for all investors. Past performance is not necessarily indicative of future results. You should carefully consider whether trading is suitable for you in light of your circumstances, knowledge, and financial resources.</p>
+      <p>NinjaTrader&reg; is a registered trademark of NinjaTrader, LLC. No NinjaTrader company has any affiliation with the owner, developer, or provider of the products or services described herein, or any interest, ownership or otherwise, in any such product or service, or endorses, recommends or approves any such product or service.</p>
+      <p>Futures Trading Revolution is a NinjaTrader Ecosystem vendor. Fundamental Futures LLC.</p>
+      <p>The information provided is for educational purposes only and is not intended as investment advice.</p>
+    </div>
+    <div class="foot-links">
+      <a href="https://www.futurestradingrevolution.com">Home</a>
+      <a href="index.html">Blog</a>
+      <a href="https://indicators.futurestradingrevolution.com">Indicators</a>
+      <a href="https://www.youtube.com/channel/UCu-KvQkcbJjt_CUi6bFaGkw">YouTube</a>
+    </div>
+    <p class="copyright">&copy; 2026 Futures Trading Revolution</p>
+  </div>
+</footer>
+
+</body>
+</html>
