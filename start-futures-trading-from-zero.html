@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="64x64" href="favicon-64.png">
+<link rel="icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<title>How I'd Start Futures Trading Over Again From Zero (My Exact Plan) | Futures Trading Revolution</title>
+<meta name="description" content="If I started futures trading from zero today: one market, two charts, three skills, and the risk rules I'd write before my first trade. My exact plan.">
+<meta property="og:title" content="How I'd Start Futures Trading Over Again From Zero (My Exact Plan)">
+<meta property="og:description" content="If I started futures trading from zero today: one market, two charts, three skills, and the risk rules I'd write before my first trade. My exact plan.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D6NDBBGGNC"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D6NDBBGGNC');
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much money do you need to start futures trading?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enough to open an account and trade micro contracts with risk you'd shrug at, and that's it. Micros exist so you don't need a big balance to get real reps. Starting small isn't a limitation, it forces the sizing discipline you'd otherwise have to learn the expensive way."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you trade futures with a full-time job?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Futures markets are open about 23 hours a day, so the constraint isn't availability, it's discipline. The trap is forcing trades because you're finally in front of the screens. The market doesn't reward your schedule, it rewards your process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to become a consistent futures trader?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Longer than the internet implies, and it varies by how many reps you get and how honestly you review them. Treat it like any skill with a learning curve rather than a switch that flips. Measuring your behavior weekly speeds it up more than adding new strategies does."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is NinjaTrader good for beginners?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It's what I'd use if I started today for futures specifically, mostly because the simulation and replay environments let you build reps without spending money. Confirm current data, commission, and platform terms directly on their site before funding anything."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should beginners use indicators?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Very few. I'd start with clean price structure on a 60-minute chart and a tick chart, and add nothing until you can explain exactly what problem the addition solves. Most indicator stacks are a way of avoiding a decision, not making one."
+      }
+    }
+  ]
+}
+</script>
+<style>
+:root {
+--ground: #0B0F14;
+--card: rgba(255,255,255,0.04);
+--border: rgba(255,255,255,0.08);
+--yellow: #FFF205;
+--yellow-dim: #E5D905;
+--text: #D6D9DE;
+--muted: #8B93A1;
+--white: #FFFFFF;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { background: var(--ground); }
+body {
+background:
+linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px),
+var(--ground);
+background-size: 44px 44px, 44px 44px, auto;
+color: var(--text);
+font-family: 'Montserrat', -apple-system, sans-serif;
+-webkit-font-smoothing: antialiased;
+}
+a { color: var(--yellow); text-decoration: none; }
+a:hover { color: var(--yellow-dim); }
+
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+
+header {
+border-bottom: 1px solid var(--border);
+padding: 18px 0;
+background: rgba(11,15,20,0.85);
+backdrop-filter: blur(8px);
+position: sticky; top: 0; z-index: 10;
+}
+.brand { display: flex; align-items: center; gap: 12px; }
+.brand-mark {
+background: var(--yellow); color: #000;
+font-weight: 800; font-size: 14px;
+padding: 4px 9px; border-radius: 4px;
+}
+.brand-name {
+font-family: 'Space Mono', monospace;
+font-size: 11px; letter-spacing: 0.18em;
+color: var(--muted); text-transform: uppercase;
+}
+.brand a { display: flex; align-items: center; gap: 12px; }
+header nav { display: flex; justify-content: space-between; align-items: center; }
+.nav-links { display: flex; gap: 22px; }
+.nav-links a {
+font-family: 'Space Mono', monospace;
+font-size: 12px; letter-spacing: 0.08em;
+color: var(--text); text-transform: uppercase;
+}
+.nav-links a:hover { color: var(--yellow); }
+
+.back {
+display: inline-block; margin: 34px 0 0;
+font-family: 'Space Mono', monospace;
+font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;
+color: var(--muted);
+}
+.back:hover { color: var(--yellow); }
+
+.post-head { padding: 26px 0 8px; }
+.post-meta { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+.chip {
+font-family: 'Space Mono', monospace;
+font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+border: 1px solid rgba(125,211,252,0.3);
+color: #7DD3FC;
+padding: 4px 10px; border-radius: 4px;
+background: rgba(0,0,0,0.3);
+}
+.post-date {
+font-family: 'Space Mono', monospace;
+font-size: 11px; letter-spacing: 0.1em;
+color: var(--muted); text-transform: uppercase;
+}
+.post-head h1 {
+color: var(--white);
+font-size: clamp(28px, 4.5vw, 38px);
+font-weight: 800; letter-spacing: -0.02em;
+line-height: 1.15;
+}
+
+article { padding: 30px 0 10px; }
+article p {
+font-size: 16.5px; line-height: 1.75;
+margin-bottom: 22px; color: var(--text);
+}
+article h2 {
+color: var(--white);
+font-size: 24px; font-weight: 700;
+margin: 44px 0 18px;
+}
+article h3 {
+color: var(--white);
+font-size: 19px; font-weight: 700;
+margin: 30px 0 12px;
+}
+article strong, article b { color: var(--white); font-weight: 700; }
+article em, article i { color: var(--text); }
+article ul, article ol { margin: 0 0 22px 22px; }
+article li { font-size: 16.5px; line-height: 1.7; margin-bottom: 10px; }
+article ul ul { margin-top: 10px; }
+article img {
+max-width: 100%; height: auto;
+border-radius: 10px;
+border: 1px solid var(--border);
+margin: 6px 0 22px;
+}
+.video-embed {
+position: relative; padding-bottom: 56.25%; height: 0;
+margin: 6px 0 28px;
+border-radius: 10px; overflow: hidden;
+border: 1px solid var(--border);
+}
+.video-embed iframe {
+position: absolute; top: 0; left: 0;
+width: 100%; height: 100%; border: 0;
+}
+.callout {
+background: var(--card);
+border: 1px solid rgba(255,242,5,0.25);
+border-radius: 10px;
+padding: 20px 24px;
+margin: 0 0 22px;
+}
+.callout p { margin: 0; font-size: 15.5px; }
+
+.cta-band {
+background: #000000;
+border: 1px solid var(--border);
+border-radius: 12px;
+padding: 34px 32px;
+margin: 50px 0 0;
+text-align: center;
+}
+.cta-band h3 { color: var(--white); font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+.cta-band p { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
+.btn {
+display: inline-block;
+background: var(--yellow); color: #000;
+font-weight: 700; font-size: 14px;
+padding: 12px 26px; border-radius: 6px;
+}
+.btn:hover { background: var(--yellow-dim); color: #000; }
+
+footer {
+border-top: 1px solid var(--border);
+margin-top: 70px; padding: 44px 0 60px;
+}
+.foot-brand { margin-bottom: 22px; }
+.disclosures { font-size: 11.5px; line-height: 1.7; color: var(--muted); }
+.disclosures p { margin-bottom: 12px; }
+.foot-links {
+margin-top: 20px;
+font-family: 'Space Mono', monospace; font-size: 11px;
+letter-spacing: 0.1em; text-transform: uppercase;
+}
+.foot-links a { color: var(--muted); margin-right: 18px; }
+.foot-links a:hover { color: var(--yellow); }
+.copyright { margin-top: 18px; font-size: 11px; color: var(--muted); }
+
+@media (max-width: 560px) {
+.cta-band { padding: 28px 20px; }
+.nav-links { gap: 14px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<nav>
+<div class="brand">
+<a href="https://www.futurestradingrevolution.com">
+<span class="brand-mark">FTR</span>
+<span class="brand-name">Futures Trading Revolution</span>
+</a>
+</div>
+<div class="nav-links">
+<a href="index.html">Blog</a>
+<a href="https://indicators.futurestradingrevolution.com">Indicators</a>
+<a href="https://grade.futurestradingrevolution.com">Scorecard</a>
+</div>
+</nav>
+</div>
+</header>
+
+<main class="wrap">
+
+<a class="back" href="index.html">&larr; All posts</a>
+
+<div class="post-head">
+<div class="post-meta">
+<span class="chip" style="border-color: rgba(255,242,5,0.3); color: #FFF205;">Process</span>
+<span class="post-date">Sep 07, 2026</span>
+</div>
+<h1>How I'd Start Futures Trading Over Again From Zero (My Exact Plan)</h1>
+</div>
+
+<article>
+
+<p>If I could start futures trading over again today, knowing what I know now, I'd throw out about 80 percent of what I learned first. Not that it was wrong. It just didn't matter yet.</p>
+<p>So here's what this post covers: how I'd start futures trading from zero as a regular person with a job, what to focus on, what to ignore completely, and the risk rules I'd have in place from day one.</p>
+<p>I'm Jason. I'm a futures trader and a trading coach, and I'm also a professional orchestral percussionist, which means I've never had the luxury of staring at screens all day. I've been trading since 2020. I lost money early, made some back, and mostly learned things I didn't need to know.</p>
+
+<h2>How would I start futures trading from zero today?</h2>
+<p><strong>I'd pick one liquid market, put two charts on the screen, and spend my first months learning three skills: structure, execution, and context. I'd practice in simulation with a written plan, size small enough to stay boring, and set zero income expectations. Learn the skill first. The money is downstream of the skill.</strong></p>
+<p>That's the whole plan. Now let's build it out.</p>
+
+<h2>Four things I'm assuming about you</h2>
+<p>Before markets, platforms, and charts, I want to name where you probably are.</p>
+<p><strong>One, you have a full-time job or some other income.</strong> Good. That's protection, not a disadvantage. You're not forced to pull money out of an account that isn't ready to give it.</p>
+<p><strong>Two, you're starting with a small account.</strong> Also good. Small accounts promote discipline, because there's nowhere to hide sloppy size.</p>
+<p><strong>Three, you have limited time.</strong> I've got an orchestra gig and two kids. I pick my spots. You can too. The market's open 23 hours a day, so availability isn't your problem.</p>
+<p><strong>Four, no income expectations.</strong> None. Zero. This is the one people fight me on, and it's the one that matters most. The second you attach a monthly number to a skill you haven't built yet, every decision you make gets worse.</p>
+
+<h2>Four things I'd refuse to do</h2>
+<p>Subtraction is faster than addition. If I started over, here's what I'd cut on day one.</p>
+<ol>
+<li><strong>No strategy hopping.</strong> Pick one simple approach and commit to it long enough to have actual data on it. Twenty trades is not data. Two hundred is a conversation.</li>
+<li><strong>No trying to learn everything at once.</strong> Futures trading is an infinite rabbit hole. Learn what matters and learn it well.</li>
+<li><strong>No confusing activity with progress.</strong> It feels productive to be in a trade. It isn't. Refining your process is the work.</li>
+<li><strong>No trading multiple markets.</strong> One market. Maybe two, later. You want to know one instrument's behavior the way you know your own driveway.</li>
+</ol>
+
+<h2>What gear and platform do you actually need to start futures trading?</h2>
+<p>Less than YouTube tells you. <a href="my-futures-trading-setup.html">A laptop is enough.</a> I'd want at least 16 gigs of RAM and a graphics card that can drive one or two external monitors, so you don't have to buy a whole machine again in two years.</p>
+<p>For futures, I'd download <a href="ninjatrader-review.html">NinjaTrader</a> and ignore the rest. Practice in simulation first, and read their current data and commission terms yourself before you fund anything, because those change.</p>
+<p>One honest note on tools, including mine:</p>
+<div class="callout">
+<p><strong>Software makes your plan faster to execute. It can't make a bad plan better.</strong></p>
+</div>
+<p>If you're brand new, you don't have a plan yet to speed up. Come back to that later.</p>
+
+<h2>Which futures market should a beginner trade?</h2>
+<p>I'd choose on three criteria, not on somebody's hot take: <strong>liquidity, consistency, and respect for structure.</strong></p>
+<p>Starting today, I'd trade the ES, the S&amp;P 500 futures. Enormous volume in and out every day, it moves well during the session so you stay engaged, and it repeats. Levels get tested, reclaimed, and rejected in patterns you can actually learn.</p>
+<p>Then two charts. One 60-minute chart for structure and the levels I care about. One tick chart for entries. That's it. Simplicity is your edge in the market, and it stops being edge the moment you bolt on a fifth indicator.</p>
+
+<h2>The three skills I'd learn, in this order</h2>
+
+<h3>1. Structure</h3>
+<p>Structure is just what the market looks like on your screen and what's worth caring about. The market is a visual representation of three pieces:</p>
+<ul>
+<li><strong>Swings and pivots.</strong> Where price turned hard. Mark the tops and the bottoms and use different colors so your eye does the work.</li>
+<li><strong>Support and resistance.</strong> A swing becomes a level when price comes back and respects it. Not before. Until then it's a line on a chart.</li>
+<li><strong>Trend lines, for context only.</strong> A trend line describes trajectory. It is not a signal. Nobody moving size cares how you drew it, so never trade your opinion of a line.</li>
+</ul>
+
+<h3>2. Execution and risk</h3>
+<p>Here's the one that separates people. <strong>Entries and stops coexist. You can't have one without the other.</strong></p>
+<p>Before you click, you should be able to say out loud: this trade is wrong at this price, and when it gets there, I'm out. If you can't say it, you don't have a trade, you have a hope.</p>
+<p>Most traders <a href="90-day-plan-consistent-futures-trader.html">hold losers too long</a> because exiting makes them wrong. The faster you get comfortable being wrong cheaply, the faster this whole thing turns. Losers try to make losses rare. Better traders make them cheap.</p>
+
+<h3>3. Context</h3>
+<p>Context is the clues. Confluence. The reasons this session is worth touching and that one isn't. Where is price relative to yesterday's high and low? Are we walking into a key 60-minute level? Is the daily in an extended trend or chopping?</p>
+<p>Context gives you direction. Levels give you location. Instincts form here, and only here, after enough reps.</p>
+
+<h2>How long should you stay in simulation?</h2>
+<p>Longer than you want to. Until you genuinely can't learn anything else there.</p>
+<p>Sim's unattractive because nothing's at stake. Fine. Give it stakes: <a href="https://www.futurestradingrevolution.com/checklist">a written plan</a>, defined risk per trade, a target number of reps, and a review at the end of every week.</p>
+<p>And know this going in. <strong>The jump from sim to live money is its own skill, and new experiences bring back old bad habits.</strong> Expect a step backward. That's not failure, that's the cost of the transition, and it's the transition I wish I'd studied before I made it.</p>
+<p>At some point you step out of the batting cages and take a swing in the real game. Just don't do it a month early because you're impatient.</p>
+
+<h2>Would I hire a mentor again?</h2>
+<p>Yes, and it was one of the best trading decisions I made. I found a coach who cared as much about my trading as his own.</p>
+<p>Finding a good one is hard. Some of the loudest people out there are excellent at selling and unremarkable at trading. But every good trader I know shares one trait: they care about teaching and they're still learning themselves.</p>
+<p>Ask for a conversation first. If they won't give you one, you have your answer. Run far away. When you do talk, ask:</p>
+<ul>
+<li>How does your approach actually work?</li>
+<li>How long have you been trading?</li>
+<li>What does the timeline look like, and what other costs should I expect?</li>
+<li>How do you track client progress?</li>
+<li>How often do we meet, and what support exists between meetings?</li>
+<li><strong>If this isn't the right fit, who would you recommend I talk to?</strong></li>
+</ul>
+<p>That last one tells you almost everything. Good mentors know other good mentors, and they'll point you somewhere useful whether they get your money or not.</p>
+
+<h2>Start here</h2>
+<p>If you take one thing from this: <strong>starting right beats starting fast.</strong></p>
+<p>People start fast because there's money involved and they want it now. I get it. But the process that keeps you around for a decade is not the process that pays you in week three.</p>
+<p>One market. Two charts. Three skills. Risk rules written down before you click. Guidance if you can find someone honest.</p>
+<p><strong>Want to see your actual habits, not your P&amp;L?</strong> Run the free <a href="https://grade.futurestradingrevolution.com">Trade Scorecard</a>. Upload a NinjaTrader export, get one composite score, three pillar scores, and plain-language flags on what's leaking. No call, no card.</p>
+<p>And if you'd rather just talk it through, I'll give you an hour of my time on the house. <a href="https://www.futurestradingrevolution.com/call">Book a call</a>, tell me where you're at, and we'll figure out your next step. If we're a fit, great. If not, I'll do my best to point you in the right direction.</p>
+
+<h2>FAQ</h2>
+<h3>How much money do you need to start futures trading?</h3>
+<p>Enough to open an account and trade micro contracts with risk you'd shrug at, and that's it. Micros exist so you don't need a big balance to get real reps. Starting small isn't a limitation, it forces the sizing discipline you'd otherwise have to learn the expensive way.</p>
+<h3>Can you trade futures with a full-time job?</h3>
+<p>Yes. Futures markets are open about 23 hours a day, so the constraint isn't availability, it's discipline. The trap is forcing trades because you're finally in front of the screens. The market doesn't reward your schedule, it rewards your process.</p>
+<h3>How long does it take to become a consistent futures trader?</h3>
+<p>Longer than the internet implies, and it varies by how many reps you get and how honestly you review them. Treat it like any skill with a learning curve rather than a switch that flips. Measuring your behavior weekly speeds it up more than adding new strategies does.</p>
+<h3>Is NinjaTrader good for beginners?</h3>
+<p>It's what I'd use if I started today for futures specifically, mostly because the simulation and replay environments let you build reps without spending money. Confirm current data, commission, and platform terms directly on <a href="ninjatrader-review.html">their site before funding anything</a>.</p>
+<h3>Should beginners use indicators?</h3>
+<p>Very few. I'd start with clean price structure on a 60-minute chart and a tick chart, and add nothing until you can explain exactly what problem the addition solves. Most indicator stacks are a way of avoiding a decision, not making one.</p>
+
+<p>Educational content only, not financial advice. Futures trading involves substantial risk of loss.</p>
+
+</article>
+
+<div class="cta-band">
+<h3>Want an honest read on your own trading?</h3>
+<p>The Trade Scorecard grades your NinjaTrader trade history across risk management, consistency, and discipline. Free.</p>
+<a class="btn" href="https://grade.futurestradingrevolution.com">Score My Trading</a>
+</div>
+
+</main>
+
+<footer>
+<div class="wrap">
+<div class="foot-brand brand">
+<span class="brand-mark">FTR</span>
+<span class="brand-name">Futures Trading Revolution</span>
+</div>
+<div class="disclosures">
+<!-- COMPLIANCE: Replace the four paragraphs below with the four required
+disclosures VERBATIM from VendorGuidelines.pdf / your live page footers. -->
+<p>Futures trading involves substantial risk of loss and is not suitable for all investors. Past performance is not necessarily indicative of future results. You should carefully consider whether trading is suitable for you in light of your circumstances, knowledge, and financial resources.</p>
+<p>NinjaTrader&reg; is a registered trademark of NinjaTrader, LLC. No NinjaTrader company has any affiliation with the owner, developer, or provider of the products or services described herein, or any interest, ownership or otherwise, in any such product or service, or endorses, recommends or approves any such product or service.</p>
+<p>Futures Trading Revolution is a NinjaTrader Ecosystem vendor. Fundamental Futures LLC.</p>
+<p>The information provided is for educational purposes only and is not intended as investment advice.</p>
+</div>
+<div class="foot-links">
+<a href="https://www.futurestradingrevolution.com">Home</a>
+<a href="index.html">Blog</a>
+<a href="https://indicators.futurestradingrevolution.com">Indicators</a>
+<a href="https://www.youtube.com/channel/UCu-KvQkcbJjt_CUi6bFaGkw">YouTube</a>
+</div>
+<p class="copyright">&copy; 2026 Futures Trading Revolution</p>
+</div>
+</footer>
+
+</body>
+</html>
